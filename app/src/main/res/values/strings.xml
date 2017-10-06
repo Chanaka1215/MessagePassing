@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MessagePassing</string>
+    <string name="service_started">Example Service started</string>
+    <string name="service_label">Example Service Label</string>
+
+    <string name="activity_main_start_service">Start Service</string>
+    <string name="activity_main_stop_service">Stop Service</string>
+
+    <string name="activity_main_bind_service">Bind to Service</string>
+    <string name="activity_main_unbind_service">Unbind from Service</string>
+
+    <string name="activity_main_status_goes_here">Status Goes Here</string>
+    <string name="activity_main_integer_value_goes_here">Integer Value Goes Here</string>
+    <string name="activity_main_string_value_goes_here">String Value Goes Here</string>
+
+    <string name="activity_main_increment_by_1">Increment by 1</string>
+    <string name="activity_main_increment_by_10">Increment by 10</string>
+</resources>

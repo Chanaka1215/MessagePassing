@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.chanakafernando.messagepassing.MainActivity">
+
+    <Button
+        android:id="@+id/activity_main_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_main_margin"
+        android:background="@android:color/white"
+        android:onClick="onClickBtnStart"
+        android:padding="@dimen/activity_main_padding"
+        android:text="@string/activity_main_start_service" />
+
+    <Button
+        android:id="@+id/activity_main_stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/activity_main_margin"
+        android:background="@android:color/white"
+        android:onClick="onClickBtnStop"
+        android:padding="@dimen/activity_main_padding"
+        android:text="@string/activity_main_stop_service" />
+
+
+    <Button
+        android:id="@+id/activity_main_bind_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_start_button"
+        android:layout_margin="@dimen/activity_main_margin"
+        android:background="@android:color/white"
+        android:onClick="onClickBtnBind"
+        android:padding="@dimen/activity_main_padding"
+        android:text="@string/activity_main_bind_service" />
+
+    <Button
+        android:id="@+id/activity_main_unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/activity_main_start_button"
+        android:layout_margin="@dimen/activity_main_margin"
+        android:background="@android:color/white"
+        android:onClick="onClickBtnUnbind"
+        android:padding="@dimen/activity_main_padding"
+        android:text="@string/activity_main_unbind_service" />
+
+    <TextView
+        android:id="@+id/activity_main_status_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_unbind"
+        android:text="@string/activity_main_status_goes_here"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/activity_main_int_value_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_status_text"
+        android:text="@string/activity_main_integer_value_goes_here"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/activity_main_value_string_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_int_value_text"
+        android:text="@string/activity_main_string_value_goes_here"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/activity_main_upby1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_value_string_text"
+        android:layout_margin="@dimen/activity_main_margin"
+        android:background="@android:color/white"
+        android:onClick="onClickBtnUpBy1"
+        android:padding="@dimen/activity_main_padding"
+        android:text="@string/activity_main_increment_by_1" />
+
+    <Button
+        android:id="@+id/activity_main_upby10_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/activity_main_value_string_text"
+        android:layout_margin="@dimen/activity_main_margin"
+        android:background="@android:color/white"
+        android:onClick="onClickBtnUpBy10"
+        android:padding="@dimen/activity_main_padding"
+        android:text="@string/activity_main_increment_by_10" />
+</RelativeLayout>
